@@ -22,7 +22,7 @@ margin: 50px 0 150px;
   
 .grid{
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 100px 1fr;
   
 }
 a{
@@ -63,6 +63,7 @@ li{
 ul li{
   margin-left: 10px;
   font-size: 17px;
+  display: inline-block;;
 }
 
 
@@ -93,17 +94,20 @@ ul li{
 
   }
 
+.info{
+  margin-left: 50px;
+}
 .info3{
     font-size: 17px;
     font-weight: bold;
     
-    padding: 30px 0  0;
+    padding: 30px 0 0;
     margin-top: 15px;
     
   }
 .info2{
       font-size: 14px;
-    
+
       padding: 5px;
       border-width: 1px;
       border-style: solid;
@@ -177,6 +181,7 @@ margin: 0;
 #grid2{
   font-size: 15px;
   margin: 0 10px;
+  margin-left: 50px;
   display: grid;
   grid-template-columns: 150px 1fr;
 }
@@ -253,7 +258,13 @@ ul li{
 }
 
 
-
+#grid2{
+  font-size: 15px;
+  margin: 0 10px;
+  
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
 
  }
  
