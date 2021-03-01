@@ -95,7 +95,7 @@ ul li{
   }
 
 .info{
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .info3{
     font-size: 17px;
@@ -181,7 +181,8 @@ margin: 0;
 #grid2{
   font-size: 15px;
   margin: 0 10px;
-  margin-left: 50px;
+  padding: 0 100px 0;
+
   display: grid;
   grid-template-columns: 150px 1fr;
 }
@@ -261,7 +262,7 @@ ul li{
 #grid2{
   font-size: 15px;
   margin: 0 10px;
-  
+  padding: 0;
   display: grid;
   grid-template-columns: 150px 1fr;
 }
