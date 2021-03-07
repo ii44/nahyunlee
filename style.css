@@ -22,7 +22,7 @@ margin: 50px 0 150px;
   
 .grid{
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 104px 1fr;
   
 }
 a{
