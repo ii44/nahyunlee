@@ -27,7 +27,7 @@
             background(255);
             translate(-100, -20, 0);
             push();
-            rotateZ(theta * mouseX * 0.07);
+            rotateZ(theta * mouseX * 0.0001);
             rotateX(theta * mouseX * 0.001);
             rotateY(theta * mouseX * 0.001);
             //이미지를 텍스처로 전달하기
@@ -35,7 +35,7 @@
             sphere(150);
             pop();
 
-            translate(440, -340, -700);
+            translate(440, -440, -700);
             push();
             rotateZ(theta * 0.01);
             rotateX(theta * 0.1);
@@ -47,12 +47,12 @@
             theta += 0.01;
 
             push();
-            translate(-width / 4, -height / 2, 0);
+            translate(-width / -50, -height / -1, 0);
             rotateZ(frameCount * 0.05);
             rotateX(frameCount * 0.01);
             rotateY(frameCount * 0.01);
-            fill(250, 255, 0);
-            plane(70, 30);
+            fill(250);
+            plane(70, 60);
             pop();
         }
 
