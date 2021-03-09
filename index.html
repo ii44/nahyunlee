@@ -27,11 +27,11 @@
             background(255);
             translate(-100, -20, 0);
             push();
-            rotateZ(theta * mouseX * 0.01);
+            rotateZ(theta * mouseX * 0.07);
             rotateX(theta * mouseX * 0.001);
             rotateY(theta * mouseX * 0.001);
             //이미지를 텍스처로 전달하기
-            fill('ghostwhite');
+            texture(vid);
             sphere(150);
             pop();
 
