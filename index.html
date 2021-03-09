@@ -16,7 +16,7 @@
         function setup() {
             createCanvas(windowWidth, windowHeight, WEBGL);
 
-            img = loadImage('img/1.jpg');
+            img = loadImage('1.jpg');
             vid = createVideo(['img/hexagonal2.mp4']);
             vid.elt.muted = true;
             vid.loop();
@@ -25,24 +25,35 @@
 
         function draw() {
             background(255);
-            translate(-120, -70, 0);
+            translate(-100, -20, 0);
             push();
-            rotateZ(theta * mouseX * 0.001);
+            rotateZ(theta * mouseX * 0.01);
             rotateX(theta * mouseX * 0.001);
             rotateY(theta * mouseX * 0.001);
             //이미지를 텍스처로 전달하기
-            texture(vid);
+            fill('ghostwhite');
             sphere(150);
             pop();
-            translate(440, -340, -400);
+
+            translate(440, -340, -700);
             push();
             rotateZ(theta * 0.01);
             rotateX(theta * 0.1);
             rotateY(theta * 0.5);
-            texture(img);
-            box(100, 100, 100);
+            normalMaterial();
+
+            box(200, 200, 200);
             pop();
             theta += 0.01;
+
+            push();
+            translate(-width / 4, -height / 2, 0);
+            rotateZ(frameCount * 0.05);
+            rotateX(frameCount * 0.01);
+            rotateY(frameCount * 0.01);
+            fill(250, 255, 0);
+            plane(70, 30);
+            pop();
         }
 
 
