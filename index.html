@@ -4,63 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-decive-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
     <script>
 
-
-        let dancingWords = [];
-
-        class DanceSpan {
-            constructor(element, x, y) {
-                element.position(x, y);
-                this.element = element;
-                this.x = x;
-                this.y = y;
-            }
-
-            brownian() {
-                this.x += random(-1, 1);
-                this.y += random(-0.9, 0.9);
-                this.element.position(this.x, this.y);
-            }
-        }
-
         function setup() {
-            // 이 단락은 위의 주요 코드 블록의 부록으로서 작성됩니다.
-            // 아래의 코드들은 요소의 생성과 지정 기능을 구분합니다.
-            // 지정된 요소들은 p5js로 별도 생성될 필요가 없으며,
-            // 일반적인 HTML처럼 쓰일 수 있습니다.
-
-            createP(
-                '이미지는 일상의 장면 속 나를 붙잡는, 무수한 시선 안에서 따로 놓여져 객체가 된 사물, 그로 인해 멈추어서 본 광경, 기억된 것과 상상의 것을 확대하고 축소한다.' +
-                ' 나는 포괄적인 것이 점차 명확해질 수록 이미지에 가까워진다고 믿는다.'
-            ).addClass('text').hide();
-
-            // 이 줄은 금방 생성된 '단락'을 받지만,
-            // 동시에 HTML 페이지상 'text' 클래스를 가진 다른 요소들을 받아오기도 합니다.
-            const texts = selectAll('.text');
-
-            for (let i = 0; i < texts.length; i++) {
-                const paragraph = texts[i].html();
-                const words = paragraph.split(' ');
-                for (let j = 0; j < words.length; j++) {
-                    const spannedWord = createSpan(words[j]);
-                    const dw = new DanceSpan(spannedWord, random(windowWidth), random(windowHeight));
-                    dancingWords.push(dw);
-                }
-            }
+            createCanvas(windowWidth, windowHeight, WEBGL);
+            noStroke();
         }
+
 
         function draw() {
-            for (let i = 0; i < dancingWords.length; i++) {
-                dancingWords[i].brownian();
-            }
+            background(255);
 
+            // 우측에서 비추는 오렌지색 포인트 라이트
+            pointLight(150, 100, 0, 50, 0, 200);
+
+            // 좌측에서 비추는 파랑색 디렉셔널 라이트
+            directionalLight(0, 102, 255, -1, 0, 0);
+
+            // 정면에서 비추는 노랑색 스포트라이트
+            pointLight(255, 255, 109, 0, 0, 300);
+
+            rotateY(map(mouseX, 100, width, 0, PI));
+            rotateX(map(mouseY, 50, height, 0, PI));
+            box(200);
         }
-
-
     </script>
     <title>Lee Nahyun</title>
     <link rel="stylesheet" href="style.css">
