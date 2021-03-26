@@ -7,7 +7,7 @@ body{
 img{
    display:inline-block;
    align-items: center;
-margin: 50px 0 150px;
+margin: 100px 0 100px;
 
 }
 
@@ -20,10 +20,17 @@ margin: 50px 0 150px;
     
 }
   
-.grid{
-    display: grid;
-    grid-template-columns: 104px 1fr;
+nav{
+  float: right;
   
+}
+.grid{ 
+   display: grid;
+  grid-template-columns: none;
+  
+
+margin: 0;
+
 }
 a{
     color:black;
@@ -33,10 +40,11 @@ a{
 h2{
     font-size:17px;
     font-weight: bold;
-    margin: 10px 0 10px 10px;
-  padding: 0;
+    padding: 2px 7px 2px 7px;
+    margin: 5px;
     display: inline-block;
-  background-color: ghostwhite;
+ 
+  
    
     
 
@@ -46,24 +54,31 @@ ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display:inline-block;
+    display: block;
     font-size: 15px;
-
+    background-color: springgreen;
+border-bottom: black 1px solid;
 }
 
 li{
     font-size:15px;
     
-    padding: 5px 5px 0 0;
+    padding: 5px;
 
     display:grid;
    
 
 }
 ul li{
-  margin-left: 10px;
+  padding: 2px 7px 2px 7px;
   font-size: 17px;
-  display: inline-block;;
+  margin: 5px;
+  display: inline-block;
+  background-color: floralwhite;
+  border: black solid 1px;
+ 
+
+  text-align: center;
  
 }
 
@@ -97,18 +112,27 @@ ul li{
   }
 
 .info{
-  margin-left: 100px;
+  margin: 10px;
+  display: inline-block;
+  padding: 0 5px 10px 5px;
+
+  border-bottom: solid 1px black;
+}
+.info4{
+  display: inline-block;
 }
 .info3{
     font-size: 17px;
     font-weight: bold;
+  display: inline-block;
+  
     
-    padding: 30px 0 0;
-    margin-top: 15px;
+    margin-top: 10px;
     
   }
 .info2{
       font-size: 14px;
+      display: inline-block;
 
       padding: 5px;
       border-width: 1px;
@@ -130,9 +154,6 @@ ul li{
   }
 
 
-#class{
-    color: crimson;
-}
 
 
 .worklist_grid{
@@ -183,7 +204,7 @@ margin: 0;
 #grid2{
   font-size: 15px;
   margin: 0 10px;
-  padding: 0 100px 0;
+  padding: 0;
 
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -217,8 +238,10 @@ footer{
    
  }
  .info{
-   margin: 0 10px 10px;
+   margin: 30px 10px 10px;
+   padding: 0;
    font-size: 14px;
+   border: none;
  }
  .info2{
    font-size: 12px;
@@ -255,6 +278,8 @@ footer{
  ul{
    margin: 0;
    padding: 0;
+   background-color: white;
+   border: none;
    
  }
 ul li{
@@ -262,11 +287,12 @@ ul li{
  margin: 5px 5px 5px 0;
  padding: 0 5px 0 5px;
  border: black solid 1px; 
+ background-color: white;
 
  
 }
 .cy{
-  background-color: yellow;
+  background-color: springgreen;
   
 }
 
