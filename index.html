@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
     <script>
-
         function setup() {
             createCanvas(windowWidth, windowHeight, WEBGL);
             noStroke();
@@ -28,10 +27,11 @@
             // 정면에서 비추는 노랑색 스포트라이트
             pointLight(255, 255, 109, 0, 0, 300);
 
-            rotateY(map(mouseX, 100, width, 0, PI));
-            rotateX(map(mouseY, 50, height, 0, PI));
-            box(200);
+            rotateY(map(mouseX, 60, width, 0, PI));
+            rotateX(map(mouseY, 40, height, 0, PI));
+            box(150);
         }
+
     </script>
     <title>Lee Nahyun</title>
     <link rel="stylesheet" href="style.css">
