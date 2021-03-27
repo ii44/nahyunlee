@@ -7,10 +7,18 @@
     <title>Lee Nahyun</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
 </head>
 
 <body>
-
+    <div class="loader"></div>
+    <script>
+        $(window).load(function () {
+            $('.loader').fadeOut();
+        });
+    </script>
 
 
     <div class="menu">
@@ -28,6 +36,7 @@
             </ul>
 
             <div id="article">
+
                 <img src="img/imake/im01.jpg" width="800">
                 <img src="img/imake/im02.jpg" width="800">
                 <img src="img/imake/im03.jpg" width="800">
@@ -45,6 +54,7 @@
                 <img src="img/imake/im15.jpg" width="800">
             </div>
         </div>
+
     </div>
 </body>
 
