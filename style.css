@@ -169,28 +169,33 @@ ul li{
     background-color: red;
   
   }
-
+ 
 
 
 
 .worklist_grid{
   font-size: 15px;
-  padding: 10px;
-  border-bottom: 1px black solid;
+  padding: 30px;
+  
+
  margin: 0;
  text-align: center;
  display: block;
 
 
 }
+
+
+
+
+ 
 .worklist_grid2{
-  font-size: 16px;
-  margin-top: 35px;
-  padding: 10px;
-  font-weight: bold;
-  border-bottom: 1px black solid;
- text-align: center;
- display: block;
+  padding: 30px;
+  font-size: 17px;
+font-weight: bold;
+  margin: 0;
+  text-align: center;
+  display: block;
 }
 
 .worklist_grid a:hover{
@@ -198,15 +203,16 @@ ul li{
   
 }
 .worklist2{
-  padding: 10px;
-  border-bottom: black solid 1px; 
+  padding: 30px;
+  background: linear-gradient(to right, springgreen, white);
+
  }
- .worklist4{
-   font-size: 16px;
-   margin-top: 35px;
-  padding: 10px;
-  border-bottom: black solid 1px; 
+ .worklist2-2{
+  padding: 30px;
+  background: linear-gradient(to right, springgreen, white);
+ font-size: 17px;
  }
+ 
 
 
 
@@ -215,17 +221,20 @@ ol{
   padding: 0;
 margin: 0;
   
-  border-right: 1px black solid;
+
  text-align: center;
 }
 #grid2{
   font-size: 15px;
-  margin: 0 10px;
-  padding: 0;
-
+margin: 20px 10px 0 10px;
+  
+ border: 1px black solid;
   display: grid;
+  
   grid-template-columns: 150px 1fr;
 }
+
+
 footer{
   height: 30px;
   position: fixed;
@@ -233,6 +242,10 @@ footer{
   
   left: 0; width: 98%; bottom: 0; 
 }
+
+canvas{border: 1px solid gray;border-radius: 3px;}
+
+
  @media screen and (max-width: 768px) {
   .grid{ 
    
@@ -242,6 +255,7 @@ footer{
   margin: 0;
 
  }
+ 
  
   nav{
     float: right;
@@ -317,9 +331,10 @@ ul li{
 
 #grid2{
   font-size: 15px;
-  margin: 0 10px;
+  margin: 10px;
   padding: 0;
   display: grid;
+  float: none;
   grid-template-columns: 150px 1fr;
 }
 
