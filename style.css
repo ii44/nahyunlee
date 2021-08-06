@@ -191,7 +191,7 @@ ul li{
  
 .worklist_grid2{
   padding: 30px;
-  font-size: 17px;
+  font-size: 16px;
 font-weight: bold;
   margin: 0;
   text-align: center;
@@ -210,7 +210,7 @@ font-weight: bold;
  .worklist2-2{
   padding: 30px;
   background: linear-gradient(to right, springgreen, white);
- font-size: 17px;
+ font-size: 16px;
  }
  
 
@@ -331,8 +331,13 @@ ul li{
 
 #grid2{
   font-size: 15px;
-  margin: 10px;
-  padding: 0;
+  margin: 0;
+  padding:0;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+border-left: none;
+border-right: none;
+
   display: grid;
   float: none;
   grid-template-columns: 150px 1fr;
