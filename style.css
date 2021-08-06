@@ -315,7 +315,7 @@ canvas{border: 1px solid gray;border-radius: 3px;}
  }
 ul li{
   display: inline-block;
- margin: 5px 5px 5px 0;
+ margin: 5px 10px 5px 0;
  padding: 0 5px 0 5px;
  border: black solid 1px; 
  background-color: white;
@@ -331,12 +331,10 @@ ul li{
 
 #grid2{
   font-size: 15px;
-  margin: 0;
+  margin: 50px 10px 30px 10px;
   padding:0;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-border-left: none;
-border-right: none;
+  border: black solid 1px; 
+
 
   display: grid;
   float: none;
