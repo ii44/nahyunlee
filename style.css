@@ -56,10 +56,13 @@ ul{
     margin: 0;
     display: block;
     font-size: 15px;
-    background-color: springgreen;
+   
 border-bottom: black 1px solid;
 }
-
+.bar-color{
+  background-color: springgreen;
+  
+}
 li{
     font-size:15px;
     
@@ -265,7 +268,7 @@ line-height: 180%;
 }
 .item-b{
   width: 62%;
-  background: linear-gradient(to top, rgb(211, 211, 211), white);
+  background: linear-gradient(to top, rgb(249, 255, 212), white);
   border-bottom: black 1px solid;
   border-left: black 1px solid;
   margin: 0 ;
@@ -369,10 +372,11 @@ display: block;
  ul{
    margin: 0;
    padding: 0;
-   background-color: white;
+
    border: none;
    
  }
+
 ul li{
   display: inline-block;
  margin: 5px 10px 5px 0;
@@ -381,6 +385,10 @@ ul li{
  background-color: white;
 
  
+}
+.bar-color{
+  background-color: white;
+  
 }
 .cy{
   background-color: springgreen;
