@@ -159,6 +159,7 @@ border-bottom: black 1px solid;
 font-size: 15px;
 padding: 30px;
 
+justify-content: center;
 
 margin: 0;
 text-align: center;
@@ -178,6 +179,7 @@ font-weight: bold;
 margin: 0;
 text-align: center;
 display: block;
+
 }
 
 .worklist_grid a:hover{
@@ -186,13 +188,16 @@ color: springgreen;
 }
 .worklist2{
 padding: 30px;
-background: linear-gradient(to right, springgreen, white);
+background: linear-gradient(to right, LightBlue, white);
+justify-content: center;
 
 }
 .worklist2-2{
 padding: 30px;
-background: linear-gradient(to right, springgreen, white);
+background: linear-gradient(to right, LightBlue, white);
 font-size: 17px;
+justify-content: center;
+
 }
 
 
@@ -204,8 +209,8 @@ padding: 0;
 margin: 0;
 
 
-text-align: center;
 }
+
 #grid2{
 font-size: 15px;
 margin: 30px 10px 0 10px;
@@ -213,20 +218,9 @@ margin: 30px 10px 0 10px;
 border: 1px black solid;
 display: grid;
 
-
 grid-template-columns: 200px 1fr;
 }
 
-
-footer{
-height: 30px;
-position: fixed;
-text-align: right;
-
-left: 0; width: 98%; bottom: 0; 
-}
-
-canvas{border: 1px solid gray;border-radius: 3px;}
 
 .item{
 font-size: 1rem;
@@ -279,6 +273,31 @@ display: block;
 margin: 10px;
 
 
+}
+.memo{
+  position: sticky;
+  position: -webkit-sticky;
+  font-size: 3vw;
+  padding: 6vw;
+  color: black;
+
+}
+.memo.memo1 {
+  z-index: 1;
+  background: linear-gradient(to top, LightBlue,white);
+  height: 180vw;
+  top: 0;
+  left: 30px;
+  font-size: 5.3vw;
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .memo.memo1 {
+    height: 90vw;
+    font-size: 2.5vw;
+    
+  }
 }
 
 @media screen and (max-width: 768px) {
