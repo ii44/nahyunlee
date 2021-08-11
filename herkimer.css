@@ -84,14 +84,14 @@
     height: 180vw;
     top: 0;
     left: 30px;
-    font-size: 4.8vw;
+    font-size: 4vw;
    
   }
   
   @media screen and (min-width: 600px) {
     .memo.memo1 {
       height: 90vw;
-      font-size: 3vw;
+      font-size: 2.5vw;
       
     }
   }
@@ -316,8 +316,12 @@
  
  }
   .container {
-  
-    margin: 0 auto;
+    
+      max-width: 1000px;
+      margin: 0 auto;
+   
+    
+   
     padding: 10px 0 10px;
   }
   nav{
