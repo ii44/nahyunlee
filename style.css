@@ -155,9 +155,9 @@ border-bottom: black 1px solid;
 
 
 
-.worklist_grid{
+.worklist1{
 font-size: 15px;
-padding: 30px;
+padding: 40px 30px 40px 30px;
 
 justify-content: center;
 
@@ -168,58 +168,36 @@ display: block;
 
 }
 
-
-
-
-
-.worklist_grid2{
-padding: 30px;
-font-size: 17px;
-font-weight: bold;
-margin: 0;
-text-align: center;
-display: block;
-
-}
 
 .worklist_grid a:hover{
 color: springgreen;
 
 }
 .worklist2{
-padding: 30px;
+padding: 40px 30px 40px 30px;
 background: linear-gradient(to right, LightBlue, white);
-justify-content: center;
 
-}
-.worklist2-2{
-padding: 30px;
-background: linear-gradient(to right, LightBlue, white);
-font-size: 17px;
-justify-content: center;
-
+text-align: center;
 }
 
 
 
 
-
-ol{
-padding: 0;
-margin: 0;
-
-
-}
 
 #grid2{
 font-size: 15px;
-margin: 30px 10px 0 10px;
+margin: 50px 220px 0 220px;
 
+text-align: justify;
 border: 1px black solid;
 display: grid;
 
-grid-template-columns: 200px 1fr;
+
+grid-template-columns: 130px 1fr;
+
+
 }
+
 
 
 footer{
