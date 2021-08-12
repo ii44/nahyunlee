@@ -85,6 +85,7 @@
     top: 0;
     left: 30px;
     font-size: 5.3vw;
+    line-height: 170%;
    
   }
   
@@ -122,7 +123,9 @@
     height: 180vw;
     top: 0;
     left: 30vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
+
+    line-height: 170%;
     
   }
   
@@ -161,9 +164,10 @@
     top: 10px;
     left: 30vw;
     height: 180vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
    border-top: black 1px solid;
    background-color: white;
+   line-height: 170%;
 
   }
   
