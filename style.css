@@ -1,13 +1,17 @@
+
+
 body{
   margin-top: 20px;
   margin-bottom: 20px;
   margin: 0;
   font-family: 'Source Sans Pro';
+  
 }
 img{
  display:inline-block;
  align-items: center;
-margin: 100px 0 100px;
+margin: 80px 0 100px;
+width: 700px;
 
 }
 
@@ -20,15 +24,12 @@ margin: 100px 0 100px;
   
 }
 
-nav{
-float: right;
 
-}
 .grid{ 
  display: grid;
-grid-template-columns: none;
+grid-template-columns: 150px 1fr;
 
-
+max-width: 2000px;
 margin: 0;
 
 }
@@ -38,9 +39,9 @@ a{
   -webkit-tap-highlight-color: transparent;
 }
 h2{
-  font-size:17px;
+  font-size:22px;
   font-weight: bold;
-  padding: 2px 7px 2px 7px;
+  padding: 2px 7px 30px 7px;
   margin: 5px;
   display: inline-block;
 
@@ -61,37 +62,35 @@ ul{
 }
 .bar-color{
 background-color: white;
-border-bottom: black 1px solid;
+
 }
 li{
   font-size:15px;
   
   padding: 5px;
 
-  display:grid;
  
+
 
 }
 ul li{
-padding: 2px 7px 2px 7px;
+
 font-size: 17px;
-margin: 5px 5px 5px 0;
-display: inline-block;
+
+padding: 2px 7px 2px 7px;
+  margin: 10px;
+
+  border: 1px black solid;
 
 
-
-
-text-align: center;
 
 }
 
-
-.menu ul > li{
-display: inline-block;
-padding-top: 5px;
-
-
+nav{
+  display: inline-block;
+  
 }
+
 
 .menu ul ul{
 display: none;
@@ -108,10 +107,17 @@ color: springgreen;
 
 }
 
-#article, #article2{
+#article{
+  display: grid;
+  margin:auto;
+ 
+}
+#article2{
   display: grid;
   margin:auto;
 
+  padding-top: 50px;
+  max-width: 900px;
 }
 .loader {
   border: 8px solid springgreen;
@@ -157,7 +163,7 @@ border-bottom: black 1px solid;
 
 .worklist1{
 font-size: 15px;
-padding: 40px 30px 40px 30px;
+padding: 40px 100px 40px 100px;
 
 justify-content: center;
 
@@ -186,14 +192,12 @@ text-align: center;
 
 #grid2{
 font-size: 15px;
-margin: 50px 220px 0 220px;
-
-text-align: justify;
+margin-top: 30px;
+padding: 0;
 border: 1px black solid;
 display: grid;
+grid-template-columns: 100px 1fr;
 
-
-grid-template-columns: 130px 1fr;
 
 
 }
@@ -208,7 +212,6 @@ text-align: right;
 left: 0; width: 98%; bottom: 0; 
 }
 
-canvas{border: 1px solid gray;border-radius: 3px;}
 
 .item{
 font-size: 1rem;
@@ -244,7 +247,7 @@ padding: 0;
 .container{
 
 font-size: 0;
-
+max-width: 3000px;
 
 }
 .herkimer-a{
@@ -262,6 +265,20 @@ margin: 10px;
 
 
 }
+
+
+
+
+
+
+.post{
+  
+  width: 100%;
+  padding: 0;
+  text-align: justify;
+}
+
+
 .memo{
   position: sticky;
   position: -webkit-sticky;
@@ -270,30 +287,253 @@ margin: 10px;
   color: black;
 
 }
+.link{
+  color:  springgreen;
+}
+.herkimer-a{
+  font-size: 4.5vw;
+  font-weight: bold;
+display: block;
+margin: 0;
+padding: 0 0 10px 0;
+
+}
+@media screen and (min-width: 600px) {
+  .herkimer-a{
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .memo {
+   font-size: 1.5vw;
+   
+  }
+}
+
 .memo.memo1 {
   z-index: 1;
   background: linear-gradient(to top, LightBlue,white);
+  
   height: 180vw;
   top: 0;
   left: 30px;
   font-size: 5.3vw;
+  line-height: 170%;
  
 }
 
 @media screen and (min-width: 600px) {
   .memo.memo1 {
     height: 90vw;
+    font-size: 2.3vw;
+    border-left: black 1px solid;
+    
+  }
+}
+
+.memo.memo9 {
+  z-index: 2;
+  background-color: Red;
+  height: 90vw;
+  top: 5px;
+  left: 30px;
+  font-size: 3.5vw;
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .memo.memo9 {
+    height: 60vw;
+    font-size: 1.7vw;
+  }
+}
+
+.memo.memo2{
+  z-index: 3;
+  
+  background-color: white;
+  border-top: black 1px solid;
+
+  height: 180vw;
+  top: 0;
+  left: 30vw;
+  font-size: 3.5vw;
+
+  line-height: 170%;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .memo.memo2 {
+    height: 90vw;
+    font-size: 1.8vw;
+    border-left: black 1px solid;
+  }
+}
+
+
+.memo.memo4{
+  z-index: 4;
+  top: 10px;
+  left: 30vw;
+  height: 150vw;
+  padding: 100px 0 100px 0;
+  background-color: white;
+  font-size: 2vw;
+}
+
+
+@media screen and (min-width: 600px) {
+  .memo.memo4 {
+    height: 90vw;
+    padding: 0;
+    font-size: 2.5vw;
+
+  }
+}
+
+
+
+.memo.memo5{
+  z-index: 5;
+  top: 10px;
+  left: 30vw;
+  height: 180vw;
+  font-size: 3.5vw;
+ border-top: black 1px solid;
+ 
+ background-color: white;
+ line-height: 170%;
+
+}
+
+@media screen and (min-width: 600px) {
+  .memo.memo5 {
+    height: 100vw;
+    font-size: 1.8vw;
+    border-left: black 1px solid;
+  }
+}
+
+.memo.memo6{
+  z-index: 6;
+  height: 70vw;
+  top: 10px;
+  left: 30vw;
+  background-color: Aquamarine;
+}
+
+@media screen and (min-width: 600px) {
+  .memo.memo6 {
+    height: 70vw;
+  }
+}
+
+
+.memo.memo7{
+  z-index: 7;
+  background-color:LightBlue;
+  height: 95vw;
+  top: 10px;
+  left: 30vw;
+  font-size: 3.5vw;
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .memo.memo7 {
+    height: 70vw;
     font-size: 2.5vw;
     
   }
 }
+
+.memo.memo11{
+  z-index: 8;
+  background-image: linear-gradient(DarkTurquoise, PaleGreen);
+  height: 110vw;
+  top: 10px;
+  left: 30vw;
+  font-size: 3vw;
+ 
+}
+sub{
+    font-size: 1vw;
+  }
+
+@media screen and (min-width: 600px) {
+  .memo.memo11 {
+    height: 120vw;
+    font-size: 2vw;
+  }
+   sub{
+    font-size: 0.6vw;
+
+  }
+}
+
+.memo.memo8{
+  z-index: 10;
+  background-color: Plum;
+  height: 120vw;
+  top: 10px;
+
+  left: 30vw;
+  font-size: 3vw; 
+}
+
+sub{
+    font-size: 1vw;
+  }
+
+@media screen and (min-width: 600px) {
+  .memo.memo8 {
+    height: 120vw;
+    font-size: 2vw;
+    bottom: 30px;
+  }
+   sub{
+    font-size: 0.6vw;
+
+  }
+}
+
+
+
+.memo.memo12{
+  z-index: 10;
+  background-color: Plum;
+  height: 120vw;
+  top: 10px;
+  left: 30vw;
+  font-size: 3vw; 
+}
+
+sub{
+    font-size: 1vw;
+  }
+
+@media screen and (min-width: 600px) {
+  .memo.memo12 {
+    height: 120vw;
+    font-size: 2vw;
+  }
+   sub{
+    font-size: 0.6vw;
+
+  }
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
 .grid{ 
  
   grid-template-columns: none;
   
-
+  max-width: none;
 margin: 0;
 
 }
@@ -307,6 +547,8 @@ h2 {
  display: inline-block;
 margin: 5px 0 5px 5px;
 padding: 0 5px 0 5px;
+font-size: 17px;
+
 
  
 }
@@ -344,7 +586,7 @@ a{
 }
 #article2{
 margin: 10px;
-
+padding-top: 0;
 }
 
 .news_img{ 
@@ -358,7 +600,7 @@ ul{
  padding: 0;
 
  border: none;
- 
+
 }
 
 ul li{
@@ -372,7 +614,7 @@ padding: 0 5px 0 5px;
 }
 .bar-color{
 background-color: white;
-
+border-bottom: black 1px solid;
 }
 
 
@@ -387,20 +629,24 @@ border-bottom: black solid 1px;
 margin-top: 10px;
 }
 
-.container{
-margin: 0;
-padding: 0;
 
-}
+.worklist1{
+ 
+  padding: 40px 20px 40px 20px;
+  
+  
+}  
 #grid2{
 font-size: 15px;
-margin: 30px 10px 30px 10px;
+margin-top: 20px;
 padding:0;
 border: black solid 1px; 
 
 
 grid-template-columns: 100px 1fr;
 }
+
+
 
 }
 
