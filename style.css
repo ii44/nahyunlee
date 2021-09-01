@@ -34,7 +34,7 @@ margin: 0;
 
 }
 a{
-  color:black;
+  color: black;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -279,7 +279,7 @@ margin: 10px;
 }
 
 
-.memo{
+.slide{
   position: sticky;
   position: -webkit-sticky;
   font-size: 3vw;
@@ -304,13 +304,13 @@ padding: 0 0 10px 0;
   }
 }
 @media screen and (min-width: 600px) {
-  .memo {
+  .slide {
    font-size: 1.5vw;
    
   }
 }
 
-.memo.memo1 {
+.slide.slide1 {
   z-index: 1;
   background: linear-gradient(to top, LightBlue,white);
   
@@ -323,7 +323,7 @@ padding: 0 0 10px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .memo.memo1 {
+  .slide.slide1 {
     height: 90vw;
     font-size: 2.3vw;
     border-left: black 1px solid;
@@ -331,7 +331,7 @@ padding: 0 0 10px 0;
   }
 }
 
-.memo.memo9 {
+.slide.slide9 {
   z-index: 2;
   background-color: Red;
   height: 90vw;
@@ -342,13 +342,13 @@ padding: 0 0 10px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .memo.memo9 {
+  .slide.slide9 {
     height: 60vw;
     font-size: 1.7vw;
   }
 }
 
-.memo.memo2{
+.slide.slide2{
   z-index: 3;
   
   background-color: white;
@@ -364,7 +364,7 @@ padding: 0 0 10px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .memo.memo2 {
+  .slide.slide2 {
     height: 90vw;
     font-size: 1.8vw;
     border-left: black 1px solid;
@@ -372,7 +372,7 @@ padding: 0 0 10px 0;
 }
 
 
-.memo.memo4{
+.slide.slide4{
   z-index: 4;
   top: 10px;
   left: 30vw;
@@ -384,7 +384,7 @@ padding: 0 0 10px 0;
 
 
 @media screen and (min-width: 600px) {
-  .memo.memo4 {
+  .slide.slide4 {
     height: 90vw;
     padding: 0;
     font-size: 2.5vw;
@@ -394,7 +394,7 @@ padding: 0 0 10px 0;
 
 
 
-.memo.memo5{
+.slide.slide5{
   z-index: 5;
   top: 10px;
   left: 30vw;
@@ -408,14 +408,14 @@ padding: 0 0 10px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .memo.memo5 {
+  .slide.slide5 {
     height: 100vw;
     font-size: 1.8vw;
     border-left: black 1px solid;
   }
 }
 
-.memo.memo6{
+.slide.slide6{
   z-index: 6;
   height: 70vw;
   top: 10px;
@@ -424,13 +424,13 @@ padding: 0 0 10px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .memo.memo6 {
+  .slide.slide6 {
     height: 70vw;
   }
 }
 
 
-.memo.memo7{
+.slide.slide7{
   z-index: 7;
   background-color:LightBlue;
   height: 95vw;
@@ -441,14 +441,14 @@ padding: 0 0 10px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .memo.memo7 {
+  .slide.slide7 {
     height: 70vw;
     font-size: 2.5vw;
     
   }
 }
 
-.memo.memo11{
+.slide.slide11{
   z-index: 8;
   background-image: linear-gradient(DarkTurquoise, PaleGreen);
   height: 110vw;
@@ -462,7 +462,7 @@ sub{
   }
 
 @media screen and (min-width: 600px) {
-  .memo.memo11 {
+  .slide.slide11 {
     height: 120vw;
     font-size: 2vw;
   }
@@ -472,7 +472,7 @@ sub{
   }
 }
 
-.memo.memo8{
+.slide.slide8{
   z-index: 10;
   background-color: Plum;
   height: 120vw;
@@ -487,7 +487,7 @@ sub{
   }
 
 @media screen and (min-width: 600px) {
-  .memo.memo8 {
+  .slide.slide8 {
     height: 120vw;
     font-size: 2vw;
     bottom: 30px;
@@ -500,7 +500,7 @@ sub{
 
 
 
-.memo.memo12{
+.slide.slide12{
   z-index: 10;
   background-color: Plum;
   height: 120vw;
@@ -514,7 +514,7 @@ sub{
   }
 
 @media screen and (min-width: 600px) {
-  .memo.memo12 {
+  .slide.slide12 {
     height: 120vw;
     font-size: 2vw;
   }
