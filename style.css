@@ -310,7 +310,7 @@ padding: 0 0 10px 0;
   z-index: 1;
   background: linear-gradient(to top, LightBlue,white);
   
-  height: 180vw;
+  height: 200vw;
   top: 0;
   left: 30px;
   font-size: 5.3vw;
@@ -350,7 +350,7 @@ padding: 0 0 10px 0;
   background-color: white;
   border-top: black 1px solid;
 
-  height: 180vw;
+  height: 200vw;
   top: 0;
   left: 30vw;
   font-size: 3.5vw;
@@ -372,7 +372,7 @@ padding: 0 0 10px 0;
   z-index: 4;
   top: 10px;
   left: 30vw;
-  height: 150vw;
+  height: 200vw;
   padding: 100px 0 100px 0;
   background-color: white;
   font-size: 2vw;
@@ -394,7 +394,7 @@ padding: 0 0 10px 0;
   z-index: 5;
   top: 0;
   left: 30vw;
-  height: 180vw;
+  height: 200vw;
   font-size: 3.5vw;
  border-top: black 1px solid;
  
@@ -415,7 +415,7 @@ padding: 0 0 10px 0;
   z-index: 6;
   top: 0;
   left: 30vw;
-  height: 180vw;
+  height: 200vw;
   font-size: 3.5vw;
  border-top: black 1px solid;
  
@@ -437,7 +437,7 @@ padding: 0 0 10px 0;
   z-index: 7;
   top: 0;
   left: 30vw;
-  height: 180vw;
+  height: 200vw;
   font-size: 3.5vw;
  border-top: black 1px solid;
  
