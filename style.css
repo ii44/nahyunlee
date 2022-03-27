@@ -10,7 +10,7 @@ body{
 img{
  display:inline-block;
  align-items: center;
-margin: 80px 0 100px;
+margin: 100px 0 100px;
 width: 700px;
 
 }
@@ -29,7 +29,7 @@ width: 700px;
  display: grid;
 grid-template-columns: 200px 1fr;
 
-max-width: 1000px;
+max-width: 1200px;
 margin: 0;
 
 }
@@ -277,7 +277,7 @@ margin: 10px;
   position: sticky;
   position: -webkit-sticky;
   font-size: 3vw;
-  padding: 6vw;
+  padding: 4vw;
   color: black;
  
 
@@ -310,18 +310,17 @@ padding: 0 0 10px 0;
   background-color: white;
   
   height: 200vw;
-  top: 0;
+  top: 50px;
   left: 30px;
   font-size: 6.1vw;
   line-height: 170%;
- border-top: black 1px solid;
+ 
 }
 
 @media screen and (min-width: 600px) {
   .slide.slide1 {
     height: 90vw;
     font-size: 2.3vw;
-    border-left: black 1px solid;
     
   }
 }
@@ -362,7 +361,7 @@ padding: 0 0 10px 0;
   .slide.slide2 {
     height: 90vw;
     font-size: 1.4vw;
-    border-left: black 1px solid;
+    
   }
 }
 
@@ -406,7 +405,7 @@ padding: 0 0 10px 0;
   .slide.slide5 {
     height: 100vw;
     font-size: 1.4vw;
-    border-left: black 1px solid;
+  
   }
 }
 
@@ -427,7 +426,7 @@ padding: 0 0 10px 0;
     height: 100vw;
  
     font-size: 1.4vw;
-    border-left: black 1px solid;
+
   }
 }
 
@@ -450,7 +449,7 @@ padding: 0 0 10px 0;
        height: 100vw;
  
     font-size: 1.4vw;
-    border-left: black 1px solid;
+
   }
 }
 
